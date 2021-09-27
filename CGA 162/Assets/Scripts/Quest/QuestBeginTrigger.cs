@@ -10,7 +10,7 @@ public class QuestBeginTrigger : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        startQuestBool = false;
+        // startQuestBool = false;
     }
 
     private void Update()

@@ -19,6 +19,12 @@ public class QuestManager : MonoBehaviour
 
     public GameObject exitLevel;
 
+    public int numberOfSpookyTriggersTriggered;
+    public GameObject spookyBat;
+    public Transform spookyBatTrans;
+    public bool batChase;
+    public GameObject swarm;
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -45,10 +51,7 @@ public class QuestManager : MonoBehaviour
                 questEnd[currentQuest].SetActive(true);
             }
         }
-        if (QBT.startQuestBool == false)
-        {
-            questStartText.text = "";
-        }
+
         if (onQuest == true)
         {
             questTimerText.text = questTimer.ToString();
