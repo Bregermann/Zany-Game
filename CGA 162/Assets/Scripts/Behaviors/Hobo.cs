@@ -63,13 +63,16 @@ public class Hobo : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if (Input.GetKey(KeyCode.Z))
+        if (other.tag == "Player")
         {
-            HoboGive();
-        }
-        if (Input.GetKey(KeyCode.X))
-        {
-            HoboYeet();
+            if (Input.GetKey(KeyCode.Z))
+            {
+                HoboGive();
+            }
+            if (Input.GetKey(KeyCode.X))
+            {
+                HoboYeet();
+            }
         }
     }
 
